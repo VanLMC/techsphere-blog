@@ -18,7 +18,7 @@ const BlogIndex = ({ data, location }) => {
 
   React.useEffect(async () => {
     const postsResponse = await fetchPosts()
-    console.log(postsResponse)
+
     setPosts(postsResponse)
   }, [])
 
